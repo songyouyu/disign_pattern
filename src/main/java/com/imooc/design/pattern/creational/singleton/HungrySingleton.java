@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @author youyusong
  * @date 2018/11/22
  */
-public class HungrySingleton implements Serializable {
+public class HungrySingleton implements Serializable, Cloneable {
 
     private final static HungrySingleton hungrySingleton;
 
@@ -33,4 +33,10 @@ public class HungrySingleton implements Serializable {
     private Object readResolve() {
         return hungrySingleton;
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return getInstance();
+    }
+
 }
