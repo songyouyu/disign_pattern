@@ -1,4 +1,9 @@
-package com.imooc.design.pattern.structural;
+package com.imooc.design.pattern.structural.facade;
+
+import com.imooc.design.pattern.structural.facade.PointsGift;
+import com.imooc.design.pattern.structural.facade.PointsPaymentService;
+import com.imooc.design.pattern.structural.facade.QualifyService;
+import com.imooc.design.pattern.structural.facade.ShippingService;
 
 /**
  * @author youyusong

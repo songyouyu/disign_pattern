@@ -1,4 +1,4 @@
-package com.imooc.design.pattern.structural;
+package com.imooc.design.pattern.structural.facade;
 
 /**
  * @author youyusong
