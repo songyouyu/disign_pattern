@@ -1,6 +1,7 @@
 package com.imooc.design.pattern.structural.adapter;
 
 /**
+ * 适配器模式
  * @author youyusong
  * @date 2018/12/8
  */
