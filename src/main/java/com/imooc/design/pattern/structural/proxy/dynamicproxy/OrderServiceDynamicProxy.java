@@ -19,6 +19,10 @@ public class OrderServiceDynamicProxy implements InvocationHandler {
         this.target = target;
     }
 
+    /**
+     * 通过 Proxy 获取代理对象
+     * @return
+     */
     public Object bind() {
         Class  cls = target.getClass();
         return Proxy.newProxyInstance(cls.getClassLoader(), cls.getInterfaces(), this);
